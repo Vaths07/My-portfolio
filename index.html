@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrivathsa's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
+        header, footer { background-color: #222; color: white; text-align: center; padding: 20px; }
+        nav ol { list-style-type: none; padding: 0; display: flex; justify-content: center; gap: 15px; }
+        nav ol li a { color: white; text-decoration: none; font-weight: bold; }
+        section { padding: 40px 20px; max-width: 800px; margin: auto; background: white; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .logo, .profile-pic { display: block; margin: 0 auto 20px; }
+        .project-item { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 6px; background: #fafafa; }
+        form input, form textarea { width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        form button { padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        form button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo3.png" alt="Logo" class="logo animate__animated animate__fadeIn" style="width: 100px; height: 100px; border-radius: 50%;">
+        <h1 class="animate__animated animate__fadeInDown">Shrivathsa Shibaraya</h1>
+        <p class="animate__animated animate__fadeInUp">Aspiring Mechanical Engineer | Part-time Web Developer | UPSC Aspirant</p>
+        <nav>
+            <ol class="animate__animated animate__fadeIn">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="photo.jpg" alt="My Photo" class="profile-pic" style="width: 150px; height: 150px; border-radius: 50%;">
+        <p><strong>I am Shrivathsa Shibaraya from Bangalore, Karnataka. I am a Mechanical Engineering student with a passion for coding, design, and the civil services.</strong></p>
+        <p>Welcome to my portfolio! I enjoy combining creativity and logic through both mechanical systems and code. I aim to serve the country through the Indian Foreign Service one day while excelling in engineering today.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <caption><b>Educational Background</b></caption>
+            <thead>
+                <tr><th>Degree</th><th>Institution</th><th>Year</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Bachelor of Technology</td><td>Your University</td><td>2025 - Present</td></tr>
+                <tr><td>High School</td><td>MES Kishora Kendra</td><td>2022 - 2023</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are a few projects I’ve worked on:</p>
+        <div class="project-list"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="/action.php" method="POST">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <label>Message:</label>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <label>Upload File:</label>
+            <input type="file" name="file" accept=".jpg, .jpeg, .png, .pdf">
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Email: <a href="mailto:shrivathsa.s.41.b.ix@gmail.com">shrivathsa.s.41.b.ix@gmail.com</a></p>
+        <p>&copy; 2025 Shrivathsa's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const projects = [
+            { title: "Arduino-Based Bottle Filling System", description: "Developed an automatic bottle filler using ultrasonic sensor and Arduino UNO." },
+            { title: "Thermal Analysis of Heat Sink", description: "Simulated thermal dissipation using ANSYS for electronic cooling systems." },
+            { title: "Obstacle-Avoiding Robot", description: "Built a robot that navigates using ultrasonic sensors and motor drivers." }
+        ];
+
+        const projectList = document.querySelector('.project-list');
+        projects.forEach(project => {
+            const projectItem = document.createElement('div');
+            projectItem.className = 'project-item';
+            projectItem.innerHTML = `<h3>${project.title}</h3><p>${project.description}</p>`;
+            projectList.appendChild(projectItem);
+        });
+    </script>
+</body>
+</html>

@@ -3,28 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shrivathsa's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Shrivathsa Shibaraya | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
-        header, footer { background-color: #222; color: white; text-align: center; padding: 20px; }
-        nav ol { list-style-type: none; padding: 0; display: flex; justify-content: center; gap: 15px; }
-        nav ol li a { color: white; text-decoration: none; font-weight: bold; }
-        section { padding: 40px 20px; max-width: 800px; margin: auto; background: white; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .logo, .profile-pic { display: block; margin: 0 auto 20px; }
-        .project-item { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 6px; background: #fafafa; }
-        form input, form textarea { width: 100%; margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
-        form button { padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer; }
-        form button:hover { background-color: #0056b3; }
+        :root {
+            --primary: #002b5c;
+            --accent: #007BFF;
+            --bg-light: #f5f5f5;
+            --text: #333;
+            --white: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text);
+        }
+
+        header, footer {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+        }
+
+        nav ol li a {
+            color: var(--white);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        nav ol li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 900px;
+            background: var(--white);
+            padding: 40px 25px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo, .profile-pic {
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .project-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid var(--accent);
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 12px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #bbb;
+        }
+
+        form button {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo3.png" alt="Logo" class="logo animate__animated animate__fadeIn" style="width: 100px; height: 100px; border-radius: 50%;">
+        <img src="logo3.png" alt="Logo" class="logo animate__animated animate__fadeIn">
         <h1 class="animate__animated animate__fadeInDown">Shrivathsa Shibaraya</h1>
-        <p class="animate__animated animate__fadeInUp">Mechanical Engineer | Skills of a Web Developer | UPSC Aspirant</p>
+        <p class="animate__animated animate__fadeInUp">Mechanical Engineer | R&D Enthusiast | Aspiring Diplomat (IFS)</p>
         <nav>
             <ol class="animate__animated animate__fadeIn">
                 <li><a href="#about">About</a></li>
@@ -37,65 +146,83 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <img src="photo.jpg" alt="My Photo" class="profile-pic" style="width: 150px; height: 150px; border-radius: 50%;">
-        <p><strong>I am Shrivathsa Shibaraya from Bangalore, Karnataka. I am a Mechanical Engineering student with a passion for coding, design, and the civil services.</strong></p>
-        <p>Welcome to my portfolio! I enjoy combining creativity and logic through both mechanical systems and code. I aim to serve the country through the Indian Foreign Service one day while excelling in engineering today.</p>
+        <img src="photo.jpg" alt="My Photo" class="profile-pic">
+        <p><strong>Hello! I’m Shrivathsa Shibaraya from Bangalore.</strong></p>
+        <p>
+            I am currently pursuing a B.Tech in Mechanical Engineering. My passion lies in innovation, system design, and national service.
+            I blend engineering fundamentals with software development to solve practical problems. 
+            While I am a tech enthusiast and an R&D explorer, I am also preparing for the Indian Foreign Service to contribute to India’s global stature.
+        </p>
     </section>
 
     <section id="education">
         <h2>Education</h2>
         <table>
-            <caption><b>Educational Background</b></caption>
+            <caption><strong>Academic Background</strong></caption>
             <thead>
                 <tr><th>Degree</th><th>Institution</th><th>Year</th></tr>
             </thead>
             <tbody>
-                <tr><td>Bachelor of Technology</td><td>Your University</td><td>2025 - Present</td></tr>
-                <tr><td>High School</td><td>MES Kishora Kendra</td><td>2022 - 2023</td></tr>
+                <tr><td>B.Tech in Mechanical Engineering</td><td>Your University Name</td><td>2025 - Present</td></tr>
+                <tr><td>Pre-University (PCMB)</td><td>Sheshadripuram composite pu college</td><td>2023 - 2025</td></tr>
+                <tr><td>SSLC</td><td>MES Kishora Kendra</td><td>2022 - 2023</td></tr>
             </tbody>
         </table>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <p>Here are a few projects I’ve worked on:</p>
+        <p>Here are some of my projects blending coding and engineering principles:</p>
         <div class="project-list"></div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form id="contact-form" action="/action.php" method="POST">
-            <label>Name:</label>
+        <form id="contact-form" action="/action.php" method="POST" enctype="multipart/form-data">
+            <label for="name">Name:</label>
             <input type="text" name="name" placeholder="Your Name" required>
-            <label>Email:</label>
+            <label for="email">Email:</label>
             <input type="email" name="email" placeholder="Your Email" required>
-            <label>Message:</label>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <label>Upload File:</label>
+            <label for="message">Message:</label>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <label for="file">Upload Resume or File (optional):</label>
             <input type="file" name="file" accept=".jpg, .jpeg, .png, .pdf">
-            <button type="submit">Send</button>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
     <footer>
         <p>Email: <a href="mailto:shrivathsa.s.41.b.ix@gmail.com">shrivathsa.s.41.b.ix@gmail.com</a></p>
-        <p>&copy; 2025 Shrivathsa's Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 Shrivathsa Shibaraya | All rights reserved.</p>
     </footer>
 
     <script>
         const projects = [
-            { title: "Task Manager Web App", description: "Built with HTML, CSS, and JavaScript, it allows users to create, edit, delete, and mark tasks complete." },
-            { title: "Weather Dashboard", description: "A web app using OpenWeatherMap API to show live weather info by city with icons and 5-day forecast." },
-            { title: "Portfolio Website", description: "A responsive personal portfolio built with HTML, CSS, and JavaScript. Includes animated sections and project showcase." },
-            { title: "Quiz App", description: "An interactive quiz game using JavaScript and DOM manipulation with score tracking and time limits." }
+            {
+                title: "Task Manager Web App",
+                description: "A user-friendly productivity tool built using HTML, CSS, and JavaScript. Supports CRUD operations and saves tasks in local storage."
+            },
+            {
+                title: "Weather Dashboard",
+                description: "Integrates OpenWeatherMap API to fetch real-time weather data with city-based filtering, icons, and extended forecasts."
+            },
+            {
+                title: "Quiz App",
+                description: "JavaScript-based quiz application featuring real-time score updates, a timer, and answer tracking logic."
+            },
+            {
+                title: "Portfolio Website",
+                description: "This responsive portfolio uses vanilla JS and CSS animations to showcase personal, academic, and project details."
+            },
+           
         ];
 
         const projectList = document.querySelector('.project-list');
         projects.forEach(project => {
-            const projectItem = document.createElement('div');
-            projectItem.className = 'project-item';
-            projectItem.innerHTML = `<h3>${project.title}</h3><p>${project.description}</p>`;
-            projectList.appendChild(projectItem);
+            const item = document.createElement('div');
+            item.className = 'project-item';
+            item.innerHTML = `<h3>${project.title}</h3><p>${project.description}</p>`;
+            projectList.appendChild(item);
         });
     </script>
 </body>
